@@ -32,10 +32,22 @@ public class Ejercicio10 {
 		if (num1+num2 == num3 ) {
 			//Imprimimos por pantalla el siguiente mensaje
 			System.out.println("La suma de "+num1+" y "+num2+" es igual a "+num3+" ¡Bien Hecho!");
-			//El else, se dará si num1 + num2 no es igual a num3
-		}	else {
+			//El else if, se dará si num3 + num1  es igual a num2
+		}
+			else if (num3+num1 == num2) {
+				//Imprimimos por pantalla el siguiente mensaje
+				System.out.println("La suma de "+num1+" y "+num3+" es igual a "+num2+" ¡Bien Hecho!");
+		
+		//El else if, se dará si num3 + num2  es igual a num1
+		}
+			else if (num3+num1 == num2) {
+				//Imprimimos por pantalla el siguiente mensaje
+				System.out.println("La suma de "+num2+" y "+num3+" es igual a "+num1+" ¡Bien Hecho!");
+		}
+		
+			else {
 			//Imprimimos por pantalla el siguiente mensaje
-				System.out.println("La suma de "+num1+" y "+num2+" no es igual a "+num3+ " ¡Intentalo de nuevo!");
+				System.out.println("La suma de cualquier combinación de dos tus números no dará como resultado el otro de tus números ¡Intentalo de nuevo!");
 		}
 		//Cerramos el escaner
 		sc.close();
