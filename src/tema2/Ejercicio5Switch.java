@@ -12,7 +12,7 @@ public class Ejercicio5Switch {
      carnet=sc.nextLine();
 			
 			
-	 //Creamos otro switch según la 2º tirada pero en vez de darle los valores a num1 se los damos a num2
+	 //Creamos otro switch según el permiso que tienes, según el que pongas el programa te responderá una cosa u otra
 	 switch (carnet) {
 	case "E" :
 		System.out.println("Enhorabuena, tienes el permiso de Remolques");
