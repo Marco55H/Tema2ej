@@ -37,8 +37,16 @@ public class Ej7Bucle {
 			System.out.println("Introduce otro número, -1 para rendirte.");
 			num2 = sc.nextInt();
 		}
-		// Indicamos que el programa a terminado
-		System.out.println("Terminaste");
+		
+		//Creamos un if para diferenciar si el usuario se ha rendido o para ver si ha conseguido acertar
+		if (num2==-1) {
+			System.out.println("¿Te rendiste? El número era: "+num1);
+		}
+		else {
+			// Indicamos que el programa a terminado y el usuario a acertado
+			System.out.println("¡Enhorabuena Crack, acertaste.");	
+		}
+
 		// cerramos escaner
 		sc.close();
 	}
